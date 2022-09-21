@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekta Sikad</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" href="img/RKTSKD.png" type="image/icon type">
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        header{
+            background-color: #17252A;
+            min-height: 9vh;
+            padding-left: 15px;
+            text-align: left;
+        }
+        .rektasikadloglarge img{
+            width: 350px;
+            height: 80px;
+        }
+        nav{
+            background-color: #3AAFA9;
+            min-height: 5vh;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbutts{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbutts a{
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .navbutts a:hover{
+            background-color: #def2f1;
+            padding: 13px;
+            color: #17252A;
+        }
+        .btn-light{
+            background-color: #3AAFA9;
+            color: white;
+            font-weight: 500;
+       }
+        footer{
+            background-color: #3AAFA9;
+            min-height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        footer > a{
+            text-decoration: none;
+            color: black;
+        }
+        main article{
+            flex: 1;
+        }
+        .readuponcycling{
+            text-align: center;
+            padding:  40px;
+        }
+        @media screen and (max-width:767px) {
+            main{
+            display: flex;
+            flex-direction: column;
+        }
+            .navbutts{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+        }
+            header{
+                text-align: center;
+            }
+            .btnarticle{
+                text-align: center;
+       }
+            
+    }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <header>
+            <div class="rektasikadloglarge">
+                <a href="index.html"><img src="img/REKTA SIKAD.png"></a>
+            </div>
+        </header>
+        <nav class="navbar sticky-top navbar-expand-md">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbar_collapse">
+                    <div class="navbutts">
+                        <div><a href="index.html">HOME</a></div>
+                        <div><a href="Events.html">EVENTS</a></div>
+                        <div><a href="Ride Destinations.html">RIDE DESTINATIONS</a></div>
+                        <div><a href="Bike Shops.html">BIKE SHOPS</a></div>
+                        <div><a href="Vloggers.html">VLOGGERS</a></div>
+                        <div><a href="Contact Us.html">CONTACT US</a></div>
+                        <div><a href="Log In.html">LOG IN</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="readuponcycling">
+            <h1 class="display-5">Vloggers</h1>
+        </div>
+        <main>
+            <article>
+                <div class="container-fluid px-5">
+                    <div class="row row-cols-xs-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-5">
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header" style="background-color: #17252A; color: white;"><h4>Titowo</h4></div>
+                                <img src="img/Vloggers/Titowo.jpg">
+                                <div class="card-body bg-light">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt laborum 
+                                        corporis quam harum accusantium minima velit similique. Molestiae commodi, pariatur 
+                                        alias accusantium et nam adipisci illum ut exercitationem vitae?
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color: #17252A;">
+                                    <a href="" class="text-light"><i class="bi bi-facebook me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-instagram me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header" style="background-color: #17252A; color: white;"><h4>Dwebgeek</h4></div>
+                                <img src="img/Vloggers/Dwebgeek.jpg">
+                                <div class="card-body bg-light">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt laborum 
+                                        corporis quam harum accusantium minima velit similique. Molestiae commodi, pariatur 
+                                        alias accusantium et nam adipisci illum ut exercitationem vitae?
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color: #17252A;">
+                                    <a href="" class="text-light"><i class="bi bi-facebook me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-instagram me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header" style="background-color: #17252A; color: white;"><h4>Ger Victor</h4></div>
+                                <img src="img/Vloggers/Ger Victor.jpg">
+                                <div class="card-body bg-light">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt laborum 
+                                        corporis quam harum accusantium minima velit similique. Molestiae commodi, pariatur 
+                                        alias accusantium et nam adipisci illum ut exercitationem vitae?
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color: #17252A;">
+                                    <a href="" class="text-light"><i class="bi bi-facebook me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-instagram me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header" style="background-color: #17252A; color: white;"><h4>Manila Urban Fixed</h4></div>
+                                <img src="img/Vloggers/MUF.jpg">
+                                <div class="card-body bg-light">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt laborum 
+                                        corporis quam harum accusantium minima velit similique. Molestiae commodi, pariatur 
+                                        alias accusantium et nam adipisci illum ut exercitationem vitae?
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color: #17252A;">
+                                    <a href="" class="text-light"><i class="bi bi-facebook me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-instagram me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header" style="background-color: #17252A; color: white;"><h4>Eloi Regaliza</h4></div>
+                                <img src="img/Vloggers/Eloi.jpg">
+                                <div class="card-body bg-light">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt laborum 
+                                        corporis quam harum accusantium minima velit similique. Molestiae commodi, pariatur 
+                                        alias accusantium et nam adipisci illum ut exercitationem vitae?
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color: #17252A;">
+                                    <a href="" class="text-light"><i class="bi bi-facebook me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-instagram me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header" style="background-color: #17252A; color: white;"><h4>Unli Ahon</h4></div>
+                                <img src="img/Vloggers/UnliAhon.jpg">
+                                <div class="card-body bg-light">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt laborum 
+                                        corporis quam harum accusantium minima velit similique. Molestiae commodi, pariatur 
+                                        alias accusantium et nam adipisci illum ut exercitationem vitae?
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color: #17252A;">
+                                    <a href="" class="text-light"><i class="bi bi-facebook me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-instagram me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header" style="background-color: #17252A; color: white;"><h4>Angelo Biker Dude</h4></div>
+                                <img src="img/Vloggers/BikerDude.jpg">
+                                <div class="card-body bg-light">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt laborum 
+                                        corporis quam harum accusantium minima velit similique. Molestiae commodi, pariatur 
+                                        alias accusantium et nam adipisci illum ut exercitationem vitae?
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color: #17252A;">
+                                    <a href="" class="text-light"><i class="bi bi-facebook me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-instagram me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center">
+                                <div class="card-header" style="background-color: #17252A; color: white;"><h4>Ian How</h4></div>
+                                <img src="img/Vloggers/IanHow.jpg">
+                                <div class="card-body bg-light">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt laborum 
+                                        corporis quam harum accusantium minima velit similique. Molestiae commodi, pariatur 
+                                        alias accusantium et nam adipisci illum ut exercitationem vitae?
+                                    </p>
+                                </div>
+                                <div class="card-footer" style="background-color: #17252A;">
+                                    <a href="" class="text-light"><i class="bi bi-facebook me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-instagram me-3"></i></a>
+                                    <a href="" class="text-light"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+            </article>
+            
+        </main>
+        <footer class="container-fluid">
+            FOLLOW US<br>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i><br></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i><br></a>
+            <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+        </footer>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
