@@ -21,14 +21,14 @@
         }
         main{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             min-height: 80vh;
         }
         header{
             background-color: #17252A;
             min-height: 9vh;
             padding-left: 15px;
-            text-align: left;
+            text-align: center;
         }
         .rektasikadloglarge img{
             width: 350px;
@@ -45,10 +45,11 @@
         }
         .navbutts{
             display: flex;
-            flex-direction: row;
-            gap: 30px;
+            flex-direction: column;
+            gap: 25px;
             justify-content: center;
             align-items: center;
+            padding: 15px;
         }
         .navbutts a{
             text-decoration: none;
@@ -62,9 +63,12 @@
             color: #17252A;
         }
        .btn-light{
-        background-color: #3AAFA9;
-        color: white;
-        font-weight: 500;
+            background-color: #3AAFA9;
+            color: white;
+            font-weight: 500;
+       }
+       .btnarticle{
+            text-align: center;
        }
         footer{
             background-color: #3AAFA9;
@@ -87,24 +91,22 @@
             text-align: center;
             padding:  40px;
         }
-        @media screen and (max-width:767px) {
+        @media screen and (min-width:767px) {
             main{
-            display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
             .navbutts{
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
+                flex-direction: row;
+                gap: 30px;
                 justify-content: center;
                 align-items: center;
-                padding: 15px;
+                padding: 7px;
         }
             header{
-                text-align: center;
+                text-align: left;
             }
             .btnarticle{
-                text-align: center;
+                text-align: left;
        }
             
     }
@@ -140,7 +142,7 @@
         </div>
         <main>
             <article>
-                <div class="container-fluid px-5">
+                <div class="container-fluid px-2 px-md-5">
                     <h2 class="display-6">Intramuros</h1>
                         <img src="img/Ride Destinations/Intra.jpg" width="100%" height="100%"><br><br>
                         <p>

@@ -21,14 +21,14 @@
         }
         main{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             min-height: 80vh;
         }
         header{
             background-color: #17252A;
             min-height: 9vh;
             padding-left: 15px;
-            text-align: left;
+            text-align: center;
         }
         .rektasikadloglarge img{
             width: 350px;
@@ -45,10 +45,11 @@
         }
         .navbutts{
             display: flex;
-            flex-direction: row;
-            gap: 30px;
+            flex-direction: column;
+            gap: 25px;
             justify-content: center;
             align-items: center;
+            padding: 15px;
         }
         .navbutts a{
             text-decoration: none;
@@ -76,12 +77,12 @@
         }
         .Subscribe h1{
             color: white;
-            font-size: 45px;
+            font-size: 35px;
             font-weight: 800;
         }
         .Subscribe p{
             color: white;
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 700;
         }
         .Subscribe > .button a{
@@ -103,9 +104,12 @@
             color: black;
         }
        .btn-light{
-        background-color: #3AAFA9;
-        color: white;
-        font-weight: 500;
+            background-color: #3AAFA9;
+            color: white;
+            font-weight: 500;
+       }
+       .btnarticle{
+            text-align: center;
        }
         footer{
             background-color: #3AAFA9;
@@ -162,25 +166,31 @@
             text-align: center;
             padding: 50px;
         }
-        @media screen and (max-width:767px) {
+        @media screen and (min-width:767px) {
             main{
-            display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
             .navbutts{
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
+                flex-direction: row;
+                gap: 30px;
                 justify-content: center;
                 align-items: center;
-                padding: 15px;
+                padding: 7px;
         }
             header{
-                text-align: center;
+                text-align: left;
             }
             .btnarticle{
-                text-align: center;
+                text-align: left;
        }
+            .Subscribe h1{
+                font-size: 45px;
+                font-weight: 800;
+        }
+            .Subscribe p{
+                font-size: 15px;
+                font-weight: 700;
+        }
             
     }
     </style>
@@ -214,15 +224,15 @@
             <h1>Subscribe to Our Page For<br>More Cycling Content</h1><br>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,<br>
                 doloremque doloribus necessitatibus tempore dolorem, Lorem ipsum, dolor sit amet<br>
-                consectetur adipisicing elit. Odio ab maxime aliquam inventore asperiores aspernatur labore. Recusandae cum aut voluptates</p><br><br><br>
-            <div class="button"><a href="Sign Up.html">SUBSCRIBE</a></div>
+                consectetur adipisicing elit. Odio ab maxime aliquam inventore asperiores aspernatur labore. Recusandae cum aut voluptates</p><br><br>
+            <div class="button"><a href="Sign_Up.html">SUBSCRIBE</a></div>
         </div>
         <div class="readuponcycling">
             <h1 class="display-5">Read up On Cycling</h1>
         </div>
         <main>
             <article>
-                <div class="container-fluid px-5">
+                <div class="container-fluid px-2 px-md-5">
                     <h2 class="display-6">Top Cycling Destinations here in the Philippines</h1>
                         <img src="img/Home/Aero.jpg" width="100%" height="100%"><br><br>
                         <p>
@@ -235,7 +245,7 @@
                             accusamus, vitae ullam harum unde minus sunt.
                         </p>
                         <div class="btnarticle">
-                        <a class="btn btn-light" href="Ride Destinations.html" role="button">View More</a>
+                        <a class="btn btn-light" href="Ride_Destinations.html" role="button">View More</a>
                         </div>
                     <br><br><br>
                     <h2 class="display-6">Cycling Events</h2>
@@ -265,7 +275,7 @@
                         quo quaerat.
                     </p>
                     <div class="btnarticle">
-                    <a class="btn btn-light" href="Bike Shops.html" role="button">View More</a>
+                    <a class="btn btn-light" href="Bike_Shops.html" role="button">View More</a>
                     </div>
                     <br><br><br>
                     <h2 class="display-6">Vloggers</h2>
@@ -287,27 +297,27 @@
             </article>
             <aside class="container-fluid">
                 <h3 style="padding: 10px;">Subscribe for More Content</h3>
-                <a href="Sign Up.html"><div class="asidecontent" style="background-image: url('img/Home/100km.jpg');">
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/100km.jpg');">
                     <h4>Ten things to consider for your first 100km ride</h4>
                 </div></a>
                 <br><br>
-                <a href="Sign Up.html"><div class="asidecontent" style="background-image: url('img/Home/Pink.jpg');">
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Pink.jpg');">
                     <h4>Endurance, handling, and skills for bike commuters</h4>
                 </div></a>
                 <br><br>
-                <a href="Sign Up.html"><div class="asidecontent" style="background-image: url('img/Home/Commute.jpeg');">
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Commute.jpeg');">
                     <h4>Bike commuter gear and kit essentials</h4>
                 </div></a>
                 <br><br>
-                <a href="Sign Up.html"><div class="asidecontent" style="background-image: url('img/Home/Commutebike.jpg');">
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Commutebike.jpg');">
                     <h4>Which bike is best for my commute?</h4>
                 </div></a>
                 <br><br>
-                <a href="Sign Up.html"><div class="asidecontent" style="background-image: url('img/Home/Deciding.jpg');">
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Deciding.jpg');">
                     <h4>Deciding to be a bike commuter</h4>
                 </div></a>
                 <br><br>
-                <a href="Sign Up.html"><div class="asidecontent" style="background-image: url('img/Home/Helmet.jpg');">
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Helmet.jpg');">
                     <h4>Five Habits to Form for Safer Cycling</h4>
                 </div></a>
                 <br><br>

@@ -21,14 +21,14 @@
         }
         main{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             min-height: 80vh;
         }
         header{
             background-color: #17252A;
             min-height: 9vh;
             padding-left: 15px;
-            text-align: left;
+            text-align: center;
         }
         .rektasikadloglarge img{
             width: 350px;
@@ -45,10 +45,11 @@
         }
         .navbutts{
             display: flex;
-            flex-direction: row;
-            gap: 30px;
+            flex-direction: column;
+            gap: 25px;
             justify-content: center;
             align-items: center;
+            padding: 15px;
         }
         .navbutts a{
             text-decoration: none;
@@ -76,12 +77,12 @@
         }
         .Subscribe h1{
             color: white;
-            font-size: 45px;
+            font-size: 35px;
             font-weight: 800;
         }
         .Subscribe p{
             color: white;
-            font-size: 15px;
+            font-size: 12px;
             font-weight: 700;
         }
         .Subscribe > .button a{
@@ -103,9 +104,12 @@
             color: black;
         }
        .btn-light{
-        background-color: #3AAFA9;
-        color: white;
-        font-weight: 500;
+            background-color: #3AAFA9;
+            color: white;
+            font-weight: 500;
+       }
+       .btnarticle{
+            text-align: center;
        }
         footer{
             background-color: #3AAFA9;
@@ -128,26 +132,31 @@
             text-align: center;
             padding:  40px;
         }
-        @media screen and (max-width:767px) {
+        @media screen and (min-width:767px) {
             main{
-            display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
             .navbutts{
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
+                flex-direction: row;
+                gap: 30px;
                 justify-content: center;
                 align-items: center;
-                padding: 15px;
+                padding: 7px;
         }
             header{
-                text-align: center;
+                text-align: left;
             }
             .btnarticle{
-                text-align: center;
+                text-align: left;
        }
-            
+            .Subscribe h1{
+                font-size: 45px;
+                font-weight: 800;
+        }
+            .Subscribe p{
+                font-size: 15px;
+                font-weight: 700;
+        }
     }
     </style>
 </head>
@@ -177,18 +186,18 @@
             </div>
         </nav>
         <div class="Subscribe container-fluid">
-            <h1>Subscribe to Get Updates Whenever<br>There is an Upcoming Event</h1><br>
+            <h1>Subscribe to Get Updates Whenever There is an Upcoming Event</h1><br>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,<br>
                 doloremque doloribus necessitatibus tempore dolorem, Lorem ipsum, dolor sit amet<br>
-                consectetur adipisicing elit. Odio ab maxime aliquam inventore asperiores aspernatur labore. Recusandae cum aut voluptates</p><br><br><br>
-            <div class="button"><a href="Sign Up.html">SUBSCRIBE</a></div>
+                consectetur adipisicing elit. Odio ab maxime aliquam inventore asperiores aspernatur labore. Recusandae cum aut voluptates</p><br><br>
+            <div class="button"><a href="Sign_Up.html">SUBSCRIBE</a></div>
         </div>   
         <div class="readuponcycling">
             <h1 class="display-5">Cycling Events</h1>
         </div>
         <main>
             <article>
-                <div class="container-fluid px-5">
+                <div class="container-fluid px-2 px-md-5">
                     <h2 class="display-6">Criterium MTB/Fixed Gear/Road Bike</h1>
                         <img src="img/Events/Filam.jpg" width="100%" height="100%"><br><br>
                         <p>
@@ -201,7 +210,7 @@
                             accusamus, vitae ullam harum unde minus sunt.
                         </p>
                         <div class="btnarticle">
-                        <a class="btn btn-light" href="Ride Destinations.html" role="button">Subscribe to See Upcoming Events</a>
+                        <a class="btn btn-light" href="Sign_Up.html" role="button">Subscribe to See Upcoming Events</a>
                         </div>
                     <br><br><br>
                     <h2 class="display-6">Drag Sprint Fixed Gear</h2>
@@ -216,7 +225,7 @@
                         quo quaerat.
                     </p>
                     <div class="btnarticle">
-                    <a class="btn btn-light" href="Events.html" role="button">Subscribe to See Upcoming Events</a>
+                    <a class="btn btn-light" href="Sign_Up.html" role="button">Subscribe to See Upcoming Events</a>
                     </div>
                     <br><br><br>
                     <h2 class="display-6">Alleycat Fixed Gear</h2>
@@ -231,7 +240,7 @@
                         quo quaerat.
                     </p>
                     <div class="btnarticle">
-                    <a class="btn btn-light" href="Bike Shops.html" role="button">Subscribe to See Upcoming Events</a>
+                    <a class="btn btn-light" href="Sign_Up.html" role="button">Subscribe to See Upcoming Events</a>
                     </div>
                     <br><br><br>
                     <h2 class="display-6">Bike Show</h2>
@@ -246,7 +255,7 @@
                         quo quaerat.
                     </p>
                     <div class="btnarticle">
-                    <a class="btn btn-light" href="Vloggers.html" role="button">Subscribe to See Upcoming Events</a>
+                    <a class="btn btn-light" href="Sign_Up.html" role="button">Subscribe to See Upcoming Events</a>
                     </div>
                     <br><br><br>
                     <h2 class="display-6">Trail Races MTB/Tracklo Cross</h2>
@@ -261,7 +270,7 @@
                         quo quaerat.
                     </p>
                     <div class="btnarticle">
-                    <a class="btn btn-light" href="Vloggers.html" role="button">Subscribe to See Upcoming Events</a>
+                    <a class="btn btn-light" href="Sign_Up.html" role="button">Subscribe to See Upcoming Events</a>
                     </div>
                     <br><br><br>
                 </div>
