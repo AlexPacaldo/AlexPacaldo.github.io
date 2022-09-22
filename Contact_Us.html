@@ -70,19 +70,24 @@
        .btnarticle{
             text-align: center;
        }
+       main aside{
+            background-color: #17252A;
+            flex: 0 0 30vw;
+        }
         footer{
             background-color: #3AAFA9;
-            min-height: 15vh;
+            min-height: 8vh;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 30px;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 700;
+            color: white;
         }
         footer > a{
             text-decoration: none;
-            color: black;
+            color: white;
         }
         main article{
             flex: 1;
@@ -137,75 +142,86 @@
                 </div>
             </div>
         </nav>  
-        <div class="readuponcycling">
-            <h1 class="display-5">Contact Us</h1>
-        </div>
         <main>
             <article>
-                <div class="container-fluid px-2 px-md-5">
-                    <h2 class="display-6">Top Cycling Destinations here in the Philippines</h1>
-                        <img src="img/Home/Aero.jpg" width="100%" height="100%"><br><br>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni 
-                            provident atque qui, error ad nostrum fuga praesentium pariatur 
-                            temporibus quo recusandae perspiciatis, quis amet incidunt? Qui 
-                            inventore nulla iure fugit. Lorem ipsum dolor, sit amet consectetur 
-                            adipisicing elit. Recusandae, sit. Minima officia optio asperiores 
-                            tempora ducimus quos quibusdam sit qui, architecto, pariatur error 
-                            accusamus, vitae ullam harum unde minus sunt.
-                        </p>
-                        <div class="btnarticle">
-                        <a class="btn btn-light" href="Ride Destinations.html" role="button">View More</a>
-                        </div>
-                    <br><br><br>
-                    <h2 class="display-6">Cycling Events</h2>
-                    <img src="img/Home/Events.jpg" width="100%" height="100%"><br><br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
-                        at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
-                        odio iure! Fuga earum debitis in maiores. Corrupti, magnam! Lorem ipsum 
-                        dolor sit amet consectetur adipisicing elit. Dolore doloremque, adipisci 
-                        deleniti facere tenetur cupiditate explicabo debitis repellat officia 
-                        eius dolores est aspernatur impedit. Ad praesentium corrupti tempora 
-                        quo quaerat.
-                    </p>
-                    <div class="btnarticle">
-                    <a class="btn btn-light" href="Events.html" role="button">View More</a>
-                    </div>
-                    <br><br><br>
-                    <h2 class="display-6">Trusted Bike Shops</h2>
-                    <img src="img/Home/Shop.jpg" width="100%" height="100%"><br><br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
-                        at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
-                        odio iure! Fuga earum debitis in maiores. Corrupti, magnam! Lorem ipsum 
-                        dolor sit amet consectetur adipisicing elit. Dolore doloremque, adipisci 
-                        deleniti facere tenetur cupiditate explicabo debitis repellat officia 
-                        eius dolores est aspernatur impedit. Ad praesentium corrupti tempora 
-                        quo quaerat.
-                    </p>
-                    <div class="btnarticle">
-                    <a class="btn btn-light" href="Bike Shops.html" role="button">View More</a>
-                    </div>
-                    <br><br><br>
-                    <h2 class="display-6">Vloggers</h2>
-                    <img src="img/Home/Vloggers.jpg" width="100%" height="100%"><br><br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
-                        at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
-                        odio iure! Fuga earum debitis in maiores. Corrupti, magnam! Lorem ipsum 
-                        dolor sit amet consectetur adipisicing elit. Dolore doloremque, adipisci 
-                        deleniti facere tenetur cupiditate explicabo debitis repellat officia 
-                        eius dolores est aspernatur impedit. Ad praesentium corrupti tempora 
-                        quo quaerat.
-                    </p>
-                    <div class="btnarticle">
-                    <a class="btn btn-light" href="Vloggers.html" role="button">View More</a>
-                    </div>
-                    <br><br><br>
+                <div class="container-fluid p-md-5 p-3 py-5">
+                    <h1 class="text-center text-md-start">Send Your Request</h1><br>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">First Name</label>
+                                        <input class="form-control" type="text" name="Firstname" id="Firstname">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Last Name</label>
+                                        <input class="form-control" type="text" name="Lastname" id="Lastname">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input class="form-control" type="email" name="Email" id="Email" placeholder="you@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input class="form-control" type="number" name="PN" id="PN">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1">Message</label>
+                                        <textarea class="form-control" id="Message" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="co1-12">
+                                    <button type="submit" class="btn mb-3 text-white" style="background-color: #3AAFA9;">Send Message</button>
+                                </div>
+                            </div>
                 </div>
             </article>
-            
+            <aside class="text-white">
+                <div class="container-fluid p-md-5 p-3 py-5">
+                    <h1 class="text-center text-md-start">Contact Us</h1><br><br><br><br>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                Email
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                rektasikad@gmail.com
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                Phone Number
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                +63-929-555-0288
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                Social Media
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <a href="https://www.facebook.com/" class="text-white"><i class="bi bi-facebook me-3"></i></a>
+                                <a href="https://www.instagram.com/" class="text-white"><i class="bi bi-instagram me-3"></i></a>
+                                <a href="https://twitter.com/" class="text-white"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </main>
         <footer class="container-fluid">
             FOLLOW US<br>

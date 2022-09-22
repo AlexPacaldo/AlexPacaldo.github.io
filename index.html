@@ -29,19 +29,25 @@
             min-height: 9vh;
             padding-left: 15px;
             text-align: center;
+            display: none;
         }
         .rektasikadloglarge img{
             width: 350px;
             height: 80px;
         }
         nav{
-            background-color: #3AAFA9;
+            background-color: #17252A;
             min-height: 5vh;
             display: flex;
             flex-direction: row;
             gap: 30px;
             justify-content: center;
             align-items: center;
+        }
+        .navpic{
+            width: 260px;
+            height: 60px;
+            text-align: center;
         }
         .navbutts{
             display: flex;
@@ -113,17 +119,18 @@
        }
         footer{
             background-color: #3AAFA9;
-            min-height: 15vh;
+            min-height: 8vh;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 30px;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 700;
+            color: white;
         }
         footer > a{
             text-decoration: none;
-            color: black;
+            color: white;
         }
         main aside{
             background-color: #17252A;
@@ -170,6 +177,9 @@
             main{
             flex-direction: row;
         }
+            nav{
+                background-color: #3AAFA9;
+            }
             .navbutts{
                 flex-direction: row;
                 gap: 30px;
@@ -177,8 +187,12 @@
                 align-items: center;
                 padding: 7px;
         }
+        .navpic{
+            display: none;
+        }
             header{
                 text-align: left;
+                display: inline;
             }
             .btnarticle{
                 text-align: left;
@@ -202,11 +216,13 @@
                 <a href="index.html"><img src="img/REKTA SIKAD.png"></a>
             </div>
         </header>
-        <nav class="navbar sticky-top navbar-expand-md">
-            <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+            <div class="container-fluid navlogo">
+                <img src="img/REKTA SIKAD.png" class="navpic">
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse justify-content-center" id="navbar_collapse">
                     <div class="navbutts">
                         <div><a href="index.html">HOME</a></div>

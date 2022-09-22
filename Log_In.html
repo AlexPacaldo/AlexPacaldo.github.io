@@ -70,19 +70,54 @@
        .btnarticle{
             text-align: center;
        }
+       main aside{
+            background-color: #17252A;
+            flex: 0 0 20vw;
+            text-align: center;
+        }
+        aside h3{
+            font-weight: 900;
+            color: white;
+        }
+        aside > a{
+            text-decoration: none;
+            color: white;
+        }
+        aside > a:hover{
+            color: white;
+        }
+         .asidecontent {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            background-position: center;
+            width:100%; 
+            height: 500px;
+            padding: 10px 20px;
+        }
+        .asidecontent:hover{
+            border: 10px solid #3AAFA9;
+        }
+        .asidecontent > h4{
+            background-color: rgba(100, 100, 100, 0.638);
+            padding: 10px;
+            font-weight: 900;
+            border-radius: 10px;
+        }
         footer{
             background-color: #3AAFA9;
-            min-height: 15vh;
+            min-height: 8vh;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 30px;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 700;
+            color: white;
         }
         footer > a{
             text-decoration: none;
-            color: black;
+            color: white;
         }
         main article{
             flex: 1;
@@ -108,7 +143,14 @@
             .btnarticle{
                 text-align: left;
        }
-            
+            .container_largescreen{
+                width: 50%;
+            }
+    }
+    @media screen and (max-width:1204px) {
+            .container_largescreen{
+                width: 100%;
+            }
     }
     </style>
 </head>
@@ -137,74 +179,40 @@
                 </div>
             </div>
         </nav>   
-        <div class="readuponcycling">
-            <h1 class="display-5">Log in</h1>
-        </div>
         <main>
-            <article>
-                <div class="container-fluid px-2 px-md-5">
-                    <h2 class="display-6">Top Cycling Destinations here in the Philippines</h1>
-                        <img src="img/Home/Aero.jpg" width="100%" height="100%"><br><br>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni 
-                            provident atque qui, error ad nostrum fuga praesentium pariatur 
-                            temporibus quo recusandae perspiciatis, quis amet incidunt? Qui 
-                            inventore nulla iure fugit. Lorem ipsum dolor, sit amet consectetur 
-                            adipisicing elit. Recusandae, sit. Minima officia optio asperiores 
-                            tempora ducimus quos quibusdam sit qui, architecto, pariatur error 
-                            accusamus, vitae ullam harum unde minus sunt.
-                        </p>
-                        <div class="btnarticle">
-                        <a class="btn btn-light" href="Ride Destinations.html" role="button">View More</a>
+            <article class="bg-light">
+                <div class="container-fluid py-4 py-md-5 px-4 px-md-5 container_largescreen">
+                    <div class="card">
+                        <div class="card-body p-md-5">
+                            <h1 class="text-center text-md-start">Sign In</h1><br><br><br>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input class="form-control" type="email" name="email" id="email" required>
+                                </div><br>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input class="form-control" type="password" name="password" id="password" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-check-input" type="checkbox" name="remember_me" id="remember_me">
+                                    <label class="form-check-label">Remember me</label>
+                                </div><br>
+                                <button type="submit" class="btn w-100" style="background-color: #3AAFA9; color: white;">Sign-In</button><br><br>
+
+                                Dont have an account? <a href="Sign_Up.html">Sign Up</a>
+                            </form>
                         </div>
-                    <br><br><br>
-                    <h2 class="display-6">Cycling Events</h2>
-                    <img src="img/Home/Events.jpg" width="100%" height="100%"><br><br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
-                        at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
-                        odio iure! Fuga earum debitis in maiores. Corrupti, magnam! Lorem ipsum 
-                        dolor sit amet consectetur adipisicing elit. Dolore doloremque, adipisci 
-                        deleniti facere tenetur cupiditate explicabo debitis repellat officia 
-                        eius dolores est aspernatur impedit. Ad praesentium corrupti tempora 
-                        quo quaerat.
-                    </p>
-                    <div class="btnarticle">
-                    <a class="btn btn-light" href="Events.html" role="button">View More</a>
                     </div>
-                    <br><br><br>
-                    <h2 class="display-6">Trusted Bike Shops</h2>
-                    <img src="img/Home/Shop.jpg" width="100%" height="100%"><br><br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
-                        at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
-                        odio iure! Fuga earum debitis in maiores. Corrupti, magnam! Lorem ipsum 
-                        dolor sit amet consectetur adipisicing elit. Dolore doloremque, adipisci 
-                        deleniti facere tenetur cupiditate explicabo debitis repellat officia 
-                        eius dolores est aspernatur impedit. Ad praesentium corrupti tempora 
-                        quo quaerat.
-                    </p>
-                    <div class="btnarticle">
-                    <a class="btn btn-light" href="Bike Shops.html" role="button">View More</a>
-                    </div>
-                    <br><br><br>
-                    <h2 class="display-6">Vloggers</h2>
-                    <img src="img/Home/Vloggers.jpg" width="100%" height="100%"><br><br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
-                        at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
-                        odio iure! Fuga earum debitis in maiores. Corrupti, magnam! Lorem ipsum 
-                        dolor sit amet consectetur adipisicing elit. Dolore doloremque, adipisci 
-                        deleniti facere tenetur cupiditate explicabo debitis repellat officia 
-                        eius dolores est aspernatur impedit. Ad praesentium corrupti tempora 
-                        quo quaerat.
-                    </p>
-                    <div class="btnarticle">
-                    <a class="btn btn-light" href="Vloggers.html" role="button">View More</a>
-                    </div>
-                    <br><br><br>
                 </div>
             </article>
+            <aside class="container-fluid">
+                <h3 style="padding: 10px;">Subscribe for More Content</h3>
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/100km.jpg');">
+                    <h4>Ten things to consider for your first 100km ride</h4>
+                </div></a>
+                <br><br>
+            </aside>
             
         </main>
         <footer class="container-fluid">
