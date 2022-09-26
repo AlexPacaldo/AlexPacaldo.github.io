@@ -132,6 +132,40 @@
             text-decoration: none;
             color: white;
         }
+        main aside{
+            background-color: #17252A;
+            flex: 0 0 20vw;
+            text-align: center;
+        }
+        aside h3{
+            font-weight: 900;
+            color: white;
+        }
+        aside > a{
+            text-decoration: none;
+            color: white;
+        }
+        aside > a:hover{
+            color: white;
+        }
+         .asidecontent {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            background-position: center;
+            width:100%; 
+            height: 500px;
+            padding: 10px 20px;
+        }
+        .asidecontent:hover{
+            border: 10px solid #3AAFA9;
+        }
+        .asidecontent > h4{
+            background-color: rgba(100, 100, 100, 0.638);
+            padding: 10px;
+            font-weight: 900;
+            border-radius: 10px;
+        }
         main article{
             flex: 1;
         }
@@ -228,7 +262,30 @@
             <article>
                 <div class="container-fluid px-2 px-md-5">
                     <h2 class="display-6"><b>Criterium MTB/Fixed Gear/Road Bike</b></h1>
-                        <img src="img/Events/Filam.jpg" width="100%" height="100%"><br><br>
+                        <div class="carousel slide carousel-light" data-bs-ride="carousel" id="divcarousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#divcarousel" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#divcarousel" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#divcarousel" data-bs-slide-to="2"></li>
+                            </ol> 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Events/Filam.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Events/Crit2.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Events/Crit3.jpg" alt="" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a href="#divcarousel" class="carousel-control-prev" data-bs-slide-to="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#divcarousel" class="carousel-control-next" data-bs-slide-to="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div><br>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni 
                             provident atque qui, error ad nostrum fuga praesentium pariatur 
@@ -243,7 +300,30 @@
                         </div>
                     <br><br><br>
                     <h2 class="display-6"><b>Drag Sprint Fixed Gear</b></h2>
-                    <img src="img/Events/DragSprint.jpg" width="100%" height="100%"><br><br>
+                    <div class="carousel slide carousel-light" data-bs-ride="carousel" id="divcarousel2">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#divcarousel2" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#divcarousel2" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#divcarousel2" data-bs-slide-to="2"></li>
+                        </ol> 
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/Events/DragSprint.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Events/DS2.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Events/DS3.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a href="#divcarousel2" class="carousel-control-prev" data-bs-slide-to="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#divcarousel2" class="carousel-control-next" data-bs-slide-to="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div><br>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
                         at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
@@ -258,7 +338,30 @@
                     </div>
                     <br><br><br>
                     <h2 class="display-6"><b>Alleycat Fixed Gear</b></h2>
-                    <img src="img/Events/Allecat4.jpg" width="100%" height="100%"><br><br>
+                        <div class="carousel slide carousel-light" data-bs-ride="carousel" id="divcarousel3">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#divcarousel3" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#divcarousel3" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#divcarousel3" data-bs-slide-to="2"></li>
+                            </ol> 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Events/Allecat4.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Events/Alleycat3.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Events/Alleycat1.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a href="#divcarousel3" class="carousel-control-prev" data-bs-slide-to="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#divcarousel3" class="carousel-control-next" data-bs-slide-to="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div><br>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
                         at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
@@ -273,7 +376,30 @@
                     </div>
                     <br><br><br>
                     <h2 class="display-6"><b>Bike Show</b></h2>
-                    <img src="img/Events/Bike Show.jpg" width="100%" height="100%"><br><br>
+                        <div class="carousel slide carousel-light" data-bs-ride="carousel" id="divcarousel4">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#divcarousel4" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#divcarousel4" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#divcarousel4" data-bs-slide-to="2"></li>
+                            </ol> 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Events/Bike Show.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Events/bikeshow2.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Events/bikeshow3.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a href="#divcarousel4" class="carousel-control-prev" data-bs-slide-to="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#divcarousel4" class="carousel-control-next" data-bs-slide-to="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div><br>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
                         at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
@@ -288,7 +414,30 @@
                     </div>
                     <br><br><br>
                     <h2 class="display-6"><b>Trail Races MTB/Tracklo Cross</b></h2>
-                    <img src="img/Events/Trail.jpg" width="100%" height="100%"><br><br>
+                        <div class="carousel slide carousel-light" data-bs-ride="carousel" id="divcarousel5">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#divcarousel5" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#divcarousel5" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#divcarousel5" data-bs-slide-to="2"></li>
+                            </ol> 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Events/Trail.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Events/Tracklocross.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Events/Trail2.jpg" width="100%" height="100%"alt="" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a href="#divcarousel5" class="carousel-control-prev" data-bs-slide-to="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#divcarousel5" class="carousel-control-next" data-bs-slide-to="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div><br>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium a 
                         at necessitatibus autem hic harum vel eaque. Aliquid sed temporibus sint 
@@ -304,7 +453,33 @@
                     <br><br><br>
                 </div>
             </article>
-            
+            <aside class="container-fluid">
+                <h3 style="padding: 10px;">Subscribe for More Content</h3>
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/100km.jpg');">
+                    <h4>Ten things to consider for your first 100km ride</h4>
+                </div></a>
+                <br><br>
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Pink.jpg');">
+                    <h4>Endurance, handling, and skills for bike commuters</h4>
+                </div></a>
+                <br><br>
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Commute.jpeg');">
+                    <h4>Bike commuter gear and kit essentials</h4>
+                </div></a>
+                <br><br>
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Commutebike.jpg');">
+                    <h4>Which bike is best for my commute?</h4>
+                </div></a>
+                <br><br>
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Deciding.jpg');">
+                    <h4>Deciding to be a bike commuter</h4>
+                </div></a>
+                <br><br>
+                <a href="Sign_Up.html"><div class="asidecontent" style="background-image: url('img/Home/Helmet.jpg');">
+                    <h4>Five Habits to Form for Safer Cycling</h4>
+                </div></a>
+                <br><br>
+            </aside>
         </main>
         <footer class="container-fluid">
             FOLLOW US<br>
